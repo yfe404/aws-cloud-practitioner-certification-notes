@@ -66,5 +66,15 @@ cloud data migration and makes it simple and cost-effective for you to move larg
 - Integrated: Amazon S3 is deeply integrated with other AWS services to make it easier to build solutions that use a range of AWS services
 - Easy to manage: Amazon S3 Storage Management features allow you to take a data-driven approach to storage optimization, data security, and management efficiency. These enterprise-class capabilities give you data about your data, so you can manage your storage based on that personalized metadata.
 
+* Question :drill:
+What is AWS CloudFront?
 
+** Answer
+
+CloudFront is a global content delivery network (CDN) service that accelerates delivery of your websites, APIs, video content, 
+or other web assets.
+
+Amazon CloudFront can be used to deliver your entire website, including dynamic, static, 
+streaming, and interactive content using a global network of edge locations. Requests for your 
+content are automatically routed to the nearest edge location, so content is delivered with the best possible performance. 
 
