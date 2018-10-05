@@ -1,0 +1,70 @@
+* Question :drill:
+What are the advantages of cloud computing?
+
+** Answer
+6 advantages: 
+
+- Trade capital expense for variable expense
+- Stop guessing about capacity
+- Increase speed and agility
+- Stop spending money running and maintaining data centers
+- Go global in minutes
+
+
+* Question :drill:
+What are the types of cloud computing?
+
+** Answer
+- Infrastructure as a Service (IaaS)
+- Platform as a Service (PaaS)
+- Software as a Service (Software as a Service)
+
+* Question :drill:
+What are the models of computing deployment?
+
+** Answer
+
+- Public
+- Hybrid
+- On-premises
+
+* Question :drill:
+What is S3 and what does it mean?
+
+** Answer
+S3 stands for Simple Storage Service.
+
+S3 is on object storage with a simple web interface to store and 
+retrieve any amount of data from anywhere on the web. 
+
+* Question :drill:
+What are some usages of S3?
+
+** Answer
+You can use Amazon S3: 
+- as primary storage for cloud-native applications
+- as a bulk repository, or "data lake," for analytics
+- as a target for backup and recovery and disaster recovery
+- with serverless computing. 
+
+* Question :drill:
+What are the features of S3?
+
+** Answer
+
+9 features:
+
+- Simple: easy-to-use web based management console + REST API
+- Durable: your data is redundantly stored across multiple facilities and multiple devices in each facility
+- Scalable: you can store as much data as you want and access it 
+when needed.
+- Secure: Amazon S3 supports data transfer over SSL and automatic encryption of your data once it is uploaded. You can also configure bucket policies to manage object permissions and control access to your data using IAM
+- Available: designed for up to 99.99% availability of objects over a given year and is backed by the Amazon S3 Service Level Agreement ensuring that you can rely on it when needed. 
+- Low cost: Using lifecycle policies, you can set policies to automatically migrate your data to Standard - Infrequent Access and Amazon Glacier as it ages to further reduce costs
+- Simple data transfer: Amazon provides multiple options for
+cloud data migration and makes it simple and cost-effective for you to move large volumes of data into or out of Amazon S3. You can choose from network-optimized, physical disk-based, or third-party connector methods for import to or export from Amazon S3
+- Integrated: Amazon S3 is deeply integrated with other AWS services to make it easier to build solutions that use a range of AWS services
+- Easy to manage: Amazon S3 Storage Management features allow you to take a data-driven approach to storage optimization, data security, and management efficiency. These enterprise-class capabilities give you data about your data, so you can manage your storage based on that personalized metadata.
+
+
+
