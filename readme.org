@@ -1,3 +1,8 @@
+* Exam checklist
+
+- Read S3 FAQs
+
+
 * Question :drill:
 What are the advantages of cloud computing?
 
@@ -77,4 +82,196 @@ or other web assets.
 Amazon CloudFront can be used to deliver your entire website, including dynamic, static, 
 streaming, and interactive content using a global network of edge locations. Requests for your 
 content are automatically routed to the nearest edge location, so content is delivered with the best possible performance. 
+
+* Question :drill:
+What is AWS EC2?
+
+** Answer
+ 
+EC2 stands for Amazon Elastic Compute Cloud. 
+It is a web service that provides secure, resizable =compute capacity= in the cloud. 
+It is designed to make web-scale computing easier for developers.
+
+* Question :drill:
+What is a region?
+
+** Answer
+A Region is a physical location in the world where we have multiple Availability Zones (AZs).
+
+* Question :drill:
+What is an Availability Zones ?
+
+** Answer
+AZs consist of one or more discrete data centers, each with redundant power, networking,and connectivity, housed in separate facilities.
+* Question :drill:
+What is an Edge Location?
+
+** Answer
+Edge Locations are endpoints for AWS which are used for caching content.
+
+Typically this consists of CloudFront, Amazon's content delivery network.
+
+There are many more Edge Locations than Regions. Currently there are over 96 EL.* Question :drill:
+What is the difference between a region, an Availability Zone and an Edge Location?
+
+** Answer
+
+- A region is a physical location in the World which consists of two or more Availability Zones.
+- An AZ is one or more discrete data centers, each with redundant power, networking and connectivity, 
+housed in separate facilities
+- Edge locations are endpoints for AWS which are used for caching content.
+
+
+* Question :drill:
+What is IAM?
+
+** Answer
+Essentially, IAM allows you to manage users and their level of access to the AWS Console.
+
+
+* Question :drill:
+Critical terms of IAM?
+
+** Answer
+- Users - End Users (think people)
+- Groups - A collection of Users under one set of permissions
+- Roles - You create roles and can then be assign them to AWS resources
+- Policies - A document that defines one (or more permissions). Can be attached to User/Group/Role.
+
+
+* Question :drill:
+Is IAM Global?
+
+** Answer
+Yes
+
+
+* Question :drill:
+What is the root account?
+
+** Answer
+This is the email address used to sign up in AWS.
+Unlimited access to do things in the cloud.
+* Question :drill:
+Which permissions have new users when created?
+
+** Answer
+New users have NO permissions when first created
+* Question :drill:
+What is the difference between access keys and user/pass?
+
+** Answer
+You cannot use the Access Key ID and Secret Key to login in the console. You can use this to access AWS via the APIs and CLI however.
+
+
+* Question                                                            :drill:
+What is S3?
+
+** Answer
+
+S3 provides developpers and IT teams with secure, durable, highly-scalable object storage. Amazon S3 is easy to use, with a simple web service 
+interface to store and retrieve any amount of data from anywhere on the web.
+
+* Question :drill:
+Size of the files on S3?
+
+** Answer
+From 0 Bytes to 5 TB
+
+* Question :drill:
+What is the data consistency model for S3?
+
+** Answer
+- Read after Write consistency for PUTS of new Objects
+- Eventual Consistency for overwrite PUTS and DELETES (can take some time to propagate)
+
+* Question :drill:
+S3 is object based. What do objects consist of?
+
+** Answer
+- key (This is the name of the object)
+- value (This is the data and is made up of a sequence of bytes)
+- version ID (very important for versioning)
+- metadata (data about data you are storing)
+- subresources:
+  - Access Control Lists
+  - Torrent (not an exam topic)
+
+* Question :drill:
+What are the different Tiers/Classes of storage for S3?
+
+** Answer
+- S3 standard : 99.99% availability, 99.999999999% durability, stored redundantly across multiple devices in multiple facilities, and is 
+designed to sustain the loss of 2 facilities concurrently. No retrieval fees
+
+- S3 - IA (Infrequently Accessed) : For data that is accessed less frequently, but requires rapid access when needed. Lower fee than S3, but you are 
+charged a retrieval fee.
+
+- S3 One Zone - IA : want a lower cost option for infrequently accessed data, but do not require the multiple AZ data resilience.
+
+- Glacier : Very cheap, but used for archival only. Expedited (higher fees less retrieval time -- within minutes),
+ Standard (3-5 hours) or Bulk (5-12 hours).
+
+* Question :drill:
+S3 Charges?
+
+** Answer
+Charged for 
+- Storagex
+- Requests
+- Storage Management Pricing (the tags you use on your data, added on the metadat of your files)
+- Data Transfer Pricing (when you transfer data from one region to another)
+- Transfer Acceleration
+
+
+* Question :drill:
+What is S3 Transfert Acceleration?
+
+** Answer
+Amazon S3 Transfert Acceleration enables fast, easy, and secure transferts of files over long distances between your end users and an S3 bucket. 
+
+Transfert Acceleration takes advantage of Amazon CloudFront's globally distributed edge locations. As the data arrives at an edge location, data 
+is routed to Amazon S3 over an optimized path.
+
+
+* Question :drill:
+What are the server side encryption options for S3?
+
+** Answer
+- SSE with Amazon S3 Managed Keys (SSE-S3)
+- SSE with KMS (SSE-KMS)
+- SSE with Customer Provided Keys (SSE-C)
+
+* Question :drill:
+What are the two options for controlling access to a S3 bucket?
+
+** Answer
+- Bucket ACL
+- Bucket Policies
+
+
+* Question :drill:
+S3 Versioning characteristics?
+
+** Answer
+- Stores all versions of an object (including all writes and even if you delete an object)
+- Great backup tool
+- Once enabled, versioning cannot be disabled, only suspended
+- Integrates with Lifecycles rules
+- Versioning's MFA Delete capability, which uses multi-factor authentication, can be used to provide an additional layer of security.
+
+* Question :drill:
+Cross replication on S3?
+
+** Answer
+- Versioning must be enabled on both the source and destination buckets
+- Regions must be unique
+- Files in an existing bucket are not replicated automatically. All subsequent updated files will be replicated automatically.
+- You cannot replicate to multiple buckets or use daisy chaining (at this time)
+- Delete markers are replicated
+- Deleting individual versions or delete markers will not be replicated
+
+
+
+
 
