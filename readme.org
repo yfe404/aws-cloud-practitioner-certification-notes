@@ -491,6 +491,77 @@ Ownership, permissions, and timestamps are durably stored in S3 in the user meta
 transfered to S3, they can be managed as native S3 objects, and bucket policies such as versioning, lifecycle management, and cross-region 
 replication apply directly to objects stored in your bucket.
 
+* Question :drill:
+Volume Gateway?
+
+** Answer
+The volume interface presents your applications with disk volumes using the iSCSI block protocol.
+
+Data written to these volumes can be asynchronously backed up as point-in-time snapshots of your volumes, and stored in the cloud as Amazon EBS snaps.
+
+Snapshots are incremental backups that capture only changed blocks. All snapshot storage is also compressed to minimize your storage charges.
 
 
+* Question :drill:
+Volume Gateway - Stored Volumes?
 
+** Answer
+Stored volumes let you store your primary data locally, while asynchronously backing up that data to AWS.
+Stored volumes provide your on premises applications with low-latency access to their entire datasets, while providing durable, off-site backups.
+You can create storage volumes and mount them as iSCSI devices from your on-premises storage hardware. This data is asynchronously backed up to 
+Amazon Simple Storage Service in the form of Amazon Block Store (EBS) snapshots. 1Gb - 16Tb in size for Stored Volumes.p
+
+
+* Question :drill:
+Volume Gateway - Cached Volumes?
+
+** Answer
+Cached volumes let you use Amazon Simple Storage Service as your primary data storage while retaining frequently accessed data locally in
+your storage gateway. Cached volumes minimize the need to scale your on-premises storage infrastructures, while still providing your 
+applications with low-latency access to their frequently accessed data. You can create storage volumes up to 32Tb in size and attach to the as iSCSI
+devices from your on-premises application servers. Your gateway stores data that you write to these volumes in Amazon S3 and retains recently read 
+data on your on-premises storage gateway's cache and upload buffer storage. 1Gb-32Tb in size cached volumes.
+
+* Question :drill:
+Volume Gateway - Tape Gateway?
+
+** Answer
+Tape Gateway offers durable, cost-effective solution to archive your data in the AWS cloud. The VTL interface it provides lets you leverage 
+your existing tape-based backup application infrastructure to store data on a virtual tape cartridges that you create on your tape gateway. 
+Each tape gateway is preconfigured with a media changer and tape drives, which are available to your existing client backup applications 
+as iSCSI devices. You add tape cartridges as you need to archive your data. Supported by NetBackup, Backup Exec, Veeam etc.
+
+
+* Question :drill:
+What is Snowball?
+
+** Answer
+Snowball is a petabyte-scale data transport solution that uses secure appliances to transfer large amounts of data into and out of AWS.
+Using Snowball addresses common challenges with large scale data transferts including high network costs, long transfer times, and security concerns.
+Trtansferring data with Snowball is simple, fast, secure and can be as little as one fifth the cost of high-speed internet.
+
+80TB Snowball in all regions. Snowball uses multiple layes of security designed to protect your data including tamper-resistant enclosures, 256-bit
+encryption, and an industry standard Trusted Platform Module (TPM) designed to ensure both security and full chain-of-custody of your data. 
+Once the data transfer job has been processed and verified, AWS performs a software erasure of the Snowball appliance.
+
+* Question :drill:
+What is Snowball Edge?
+
+** Answer
+AWS Snowball Edge is a 100TB data transfer device with on-board storage and compure capabilities. You can use Snowball Edge to move large amounts
+of data into and out of AWS, as a temporary storage tier for large local datasets, or to support local workloads in remote or offline locations. 
+
+Snowball Edge connects to your existing applications and infrastructure using standard interfacesm streamlining the data transfer process 
+and minimizing setup and integration. Snowball Edge can cluster together to form a local storage tier and process your data on-premises, 
+helping ensure your applications continue to run even when they are not able to access the cloud.
+
+It's storage AND compute capacity.
+
+* Question :drill:
+What is Snowmobile?
+
+** Answer
+AWS Snowmobile is an Exabyte-scale data transfewr service used to move extremely large amounts of data to AWS. You can transfer up to 100PB 
+per Snowmobilem a 45-foot long ruggedized shipping contained, pulled by a semi-trailer truck. Snowmobile makes it easy to move massive volumes of data 
+to the cloud, including video libraries, image repositories, or even a complete data center migration. Transferring data with Snowmobile is secure,
+fast and cost effective.
