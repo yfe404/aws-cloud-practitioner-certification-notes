@@ -272,6 +272,53 @@ Cross replication on S3?
 - Deleting individual versions or delete markers will not be replicated
 
 
+* Question :drill:
+Lifecycle Management in S3?
+
+** Answer
+- Can be used in conjunction with versioning
+- Can be applied to current versions and previous versions
+- Following actions can now be done:
+  - Transition to the Standard IA storage class
+  - Archive to Glacier Storage Class
+  - Permanently Delete
+
+
+* Question :drill:
+What is a CDN?
+
+** Answer
+A content delivery network (CDN) is a system of distributed servers (network) that deliver webpages and other web content to a user
+based on the geographic locations of the user, the origin of the webpage and a content delivery server.
+
+
+AWS CloudFront can be used to deliver your entire website, including dynamic, static, streaming, and interactive content using a global 
+network of edge locations. Requests for your content are automatically routed to the nearests edge location, so content is delivered with
+the best possible performance.
+
+Amazon CloudFront is optimized to work with other Amazon Web Services, like S3, EC2, ELB and route 53. Amazon CloudFront also works seamlessly
+with any non-AWS origin server, which stores the original, definitive version of your files.
+
+
+* Question :drill:
+What is a distribution (CloudFront)?
+
+** Answer
+This is the name given to the CDN which consists of a collection of Edge Locations.
+  - Web distribution - Typically used for websites
+  - RTMP - Used for Media Streaming
+
+
+* Question :drill:
+What can you use Edge location for ?
+
+** Answer
+- EL are not just for READ only, you can write to them too.
+- Objects are cached for the life of the TTL
+- You can clear cached objects but you will be charged.
+
+
+
 
 
 
