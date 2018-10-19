@@ -565,3 +565,13 @@ AWS Snowmobile is an Exabyte-scale data transfewr service used to move extremely
 per Snowmobilem a 45-foot long ruggedized shipping contained, pulled by a semi-trailer truck. Snowmobile makes it easy to move massive volumes of data 
 to the cloud, including video libraries, image repositories, or even a complete data center migration. Transferring data with Snowmobile is secure,
 fast and cost effective.
+
+
+* Question :drill:
+What is S3 Transfer Acceleration?
+
+** Answer
+S3 Transfer Acceleration utilises the CloudFront Edge Network to accelerate your uploads to S3. Instead of uploading directly to your S3 bucket,
+you can use a distinct URL to upload directly to an edge location which will then transfer that file to S3. You will get a distinct URL to upload it.
+
+<BUCKET>.s3-accelerate.amazonaws.com
