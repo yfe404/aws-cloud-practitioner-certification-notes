@@ -42,7 +42,7 @@ What are the models of computing deployment?
 - Hybrid
 - On-premises
 
-* Question :drill:
+n* Question :drill:
   :PROPERTIES:
   :ID:       4CD5C268-64A4-408A-9AA7-DC24AE52DF1D
   :END:
@@ -575,3 +575,242 @@ S3 Transfer Acceleration utilises the CloudFront Edge Network to accelerate your
 you can use a distinct URL to upload directly to an edge location which will then transfer that file to S3. You will get a distinct URL to upload it.
 
 <BUCKET>.s3-accelerate.amazonaws.com
+
+
+
+* Question :drill:
+What is EC2?
+
+** Answer
+Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable compute capacity in the cloud. Amazon EC2 reduces the time required 
+to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
+
+* Question :drill:
+What are the EC2 options?
+
+** Answer
+- On demand: llows you to pay a fixed rate by the hour (or by the second) with no commitment.
+- Reserved: provides you with a capacity reservation, and offer a significant discount on the hourly charge for an instance. 1 year or 3 years terms.
+- Spot: Enables you to bid whatever price you want for instance capacity, providing for even greater savings if your applications have flexible 
+start and end times.
+- Dedicated Hosts: Physical EC2 server dedicated for your use. Dedicated Hosts can help you reduce costs by allowing you to use your existing 
+server-bound software licences.
+
+
+
+* Question :drill:
+Use cases for EC2 on demand?
+
+** Answer
+- Perfect for users that want the low cost and flexibility of Amazon EC2 without any up-front payment or long-term commitment.
+- Applications with short-term, spiky, or unpredictable workloads that cannot be interrupted.
+- Applications being developed or tested on Amazon EC2 for the first time.
+
+* Question :drill:
+Use cases for reserved instances ?
+
+** Answer
+- Applications with steady states or predictable usage
+- Applications that require reserved capacity
+- Users can make up-front payments to reduce their total computing costs even further
+  - Standard RIs (Up to 75% off on-demand)
+  - Convertible RIs (Up to 54% off on-demand) feature the capability to change the attributes of RI as long as the exchange results in the creation
+    of reserved instances of equal or greater value.
+  - Schedule RIs are available to launch within the time window you reserve. This allows you to match your capacity reservation to a predictable
+    recurring schedule that only require a fraction of a day/week/month.
+
+
+* Question :drill:
+Spot instances use cases?
+
+** Answer
+- Applications that have flexible start and end times
+- Applications that are only feasible at very low compute prices
+- Users with an urgent need for large amounts of additional computing capacity
+- If a spot instance is terminated by Amazon EC2, you will not be charged for a partial hour of usage.
+  However if you terminate the instance yourself you will be charged for the complete hour in which the instance ran.
+
+
+* Question :drill:
+Dedicated Hosts use cases?
+
+** Answer
+- Useful for regulatory requirements that may not support multi tenant virtualization.
+- Great for licensing which does not support multi-tenancy of cloud deployments.
+- Can be purchased on demand (hourly).
+- Can be purchased as a Reservation for up to 70% off the on-demand price.
+
+* Question :drill:
+EC2 Instance types?
+
+** Answer
+F->FPGA
+I->IOPS
+G->Graphics
+H->High Disk Throughtut
+T->Cheap General Purpose 
+D-> Density
+R->Ram
+M->Main choice for general purpose
+C->Compute
+P->Graphics
+X->Extreme Memory
+
+* Question :drill:
+What is EBS?
+
+** Answer
+Amazon EBSallows you to create storage volumes and attach them to Amazon EC2 instances. Once attached, you can create a file system on top of these
+volumes, run a database, or use them in any way you would use a block device. Amazon EBS volumes are placed in a specific AZ, where they are 
+automatically replicated to protect you from the failure of a single component.
+
+
+* Question :drill:
+EBS volume types?
+
+** Answer
+- General Purpose SSD (GP2)
+  - balances both price and performance.
+  - Ratio of 3 IOPS per GB with up to 10,000 IOPS and the ability to burst up to 3000 IOPS for extended periods of time for volumes at 3334 GB and above.
+- Provisioned IOPS SSD (IO1)
+  - Designed for I/O intensive applications such as large relational or NOSQL databases.
+  - Use if you need more than 10,000 IOPS
+  - Can provisioned up to 20,000 IOPS per volume
+- Throughtput optimized HDD (ST1)
+  - Big Data
+  - Data warehouses
+  - Log processing
+  - Cannot be a boot volume
+- Cold HDD (SC1)
+  - Lowest Cost Storage for infrequently accessed workloads
+  - File server
+  - cannot be a boot volume
+- Magnetic (standard)
+  - Lowest cost er gigabyte of all EBS volume types that is bootable. Magnetic volumes are ideal for workloads where data is accessed infrequently, 
+    and applications where the lowest storage cost is important.
+
+
+
+
+* Question :drill:
+What is the default for Termination Protection on EC2?
+
+** Answer
+Termination Protection is turned off by default
+
+
+* Question :drill:
+When an instance is terminated, what is the default for the root EBS?
+
+** Answer
+The default action is for the root EBS to be deleted when the instance is terminated
+
+* Question :drill:
+Can you encrypt the EBS root volume of your default ami's ?
+
+** Answer
+By default no. But you can create your own AMI's in the AWS console or using the API.
+
+Additional volumes CAN be encrypted
+
+* Question :drill:
+What is a security group?
+
+** Answer
+A security group is basically a firewall that control access to your EC2 instances.
+
+1 instance can have multiple security groups.
+
+
+* Question :drill:
+Security Groups - inbound traffic default?
+
+** Answer
+All inbound traffic is blocked by default
+
+* Question :drill:
+Scurity Groups - outbound traffic default?
+
+** Answer
+All outbound traffic is allowed by default
+
+* Question :drill:
+How much time does it take for change to security groups to propagate?
+
+** Answer
+Changes take effect immediately
+
+* Question :drill:
+How many EC2 instances can I have per Security Group?
+
+** Answer
+As much as I want
+
+
+* Question :drill:
+How many Security Group can I attach to an EC2 ?
+
+** Answer
+You can have multiple SG attached to EC2 instances 
+
+
+* Question :drill:
+Security Groups are STATEFUL what does it means?
+
+** Answer
+If you create an inbound rule allowing traffic in, that traffic is automatically allowed to back out again.
+
+* Question :drill:
+Can you block a specific IP address using security groups ?
+
+** Answer
+No, instead use Network Access Control Lists
+
+* Question :drill:
+Can you specify deny rules using Security Groups?
+
+** Answer
+No, you can specify allow rules but not deny rules.
+
+* Question :drill:
+Where are EBS snapshots stored?
+
+** Answer
+They are stored on S3 though you can't see them in the console.
+
+* Question :drill:
+What are EBS snapshots?
+
+** Answer
+They are point in time copies of volumes.
+
+Snapshots are incremental - this means that only the blocks that have changed since your last snapshot are moved to S3.
+
+
+* Question :drill:
+Can I create a snapshot of my root volume?
+
+** Answer
+Yes. You should stop the instance before taking the snapshot. However you can take a snap while the instance is running.
+
+
+* Question :drill:
+How can I create an AMI?
+
+** Answer
+You can create AMI's from EBS backed instances and snapshots.
+
+* Question :drill:
+Can I change the size of my EBS volume?
+
+** Answer
+You can change EBS volumes sizes on the fly, including changing the size and the storage type.
+
+* Question :drill:
+Can I have a volume in a different AZ than my EC2?
+
+** Answer
+Volumes will ALWAYS be in the same AZ as the EC2 instance.
+
+
+
