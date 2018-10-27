@@ -1,11 +1,20 @@
 * Exam checklist
 
+- Read ELB FAQs
 - Read S3 FAQs
 
 
 * Question :drill:
   :PROPERTIES:
   :ID:       CB1C6945-E330-4DF4-B158-E1A54598E696
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 1.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 1
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:24]
   :END:
 What are the advantages of cloud computing?
 
@@ -117,8 +126,17 @@ It is a web service that provides secure, resizable =compute capacity= in the cl
 It is designed to make web-scale computing easier for developers.
 
 * Question :drill:
+  SCHEDULED: <2018-10-30 Tue>
   :PROPERTIES:
   :ID:       0304225C-2044-4D56-88D4-D41CA731D385
+  :DRILL_LAST_INTERVAL: 3.86
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 3.0
+  :DRILL_EASE: 2.36
+  :DRILL_LAST_QUALITY: 3
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:28]
   :END:
 What is a region?
 
@@ -179,17 +197,20 @@ Critical terms of IAM?
 
 
 * Question :drill:
-  SCHEDULED: <2018-10-21 Sun>
+  SCHEDULED: <2018-11-06 Tue>
   :PROPERTIES:
   :ID:       F589974E-C2D7-48C9-9CB4-A0B19122F27F
-  :DRILL_LAST_INTERVAL: 4.14
-  :DRILL_REPEATS_SINCE_FAIL: 2
-  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_LAST_INTERVAL: 11.1407
+  :DRILL_REPEATS_SINCE_FAIL: 3
+  :DRILL_TOTAL_REPEATS: 2
   :DRILL_FAILURE_COUNT: 0
   :DRILL_AVERAGE_QUALITY: 5.0
-  :DRILL_EASE: 2.6
+  :DRILL_EASE: 2.7
   :DRILL_LAST_QUALITY: 5
-  :DRILL_LAST_REVIEWED: [2018-10-17 Wed 08:34]
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:17]
+  :END:
+  :LOGBOOK:
+  - Rescheduled from "[2018-10-21 Sun]" on [2018-10-26 Fri 10:17]
   :END:
 Is IAM Global?
 
@@ -200,6 +221,14 @@ Yes
 * Question :drill:
   :PROPERTIES:
   :ID:       F0D9F1FC-2B59-4CD5-A73D-B3B02A460A41
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:18]
   :END:
 What is the root account?
 
@@ -257,6 +286,14 @@ What is the data consistency model for S3?
 * Question :drill:
   :PROPERTIES:
   :ID:       333D4266-8DA0-40B4-8DCC-F83712E76BAD
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 1.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 1
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:23]
   :END:
 S3 is object based. What do objects consist of?
 
@@ -383,6 +420,14 @@ Lifecycle Management in S3?
 * Question :drill:
   :PROPERTIES:
   :ID:       98FAFC49-DA11-40C4-85AB-5548E5C5D1E1
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:27]
   :END:
 What is a CDN?
 
@@ -414,6 +459,14 @@ This is the name given to the CDN which consists of a collection of Edge Locatio
 * Question :drill:
   :PROPERTIES:
   :ID:       51A04339-26EF-4482-9D67-FB20404896C6
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:22]
   :END:
 What can you use Edge location for ?
 
@@ -424,12 +477,18 @@ What can you use Edge location for ?
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       FD97CAF8-C164-4702-B0B4-79FFA9091D27
+  :END:
 What is the default policy on newly created buckets?
 
 ** Answer
 By default all newly created buckets are PRIVATE
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       48E4749F-B70E-4CC6-B0C5-7B481FF4CBF7
+  :END:
 How can you setup access control to your buckets ?
 
 ** Answer
@@ -438,6 +497,17 @@ How can you setup access control to your buckets ?
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       CE941DD3-6506-42D7-B949-38F18986CF14
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 2.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 2
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:23]
+  :END:
 How can you see accesses to your s3 bucket ?
 
 ** Answer
@@ -445,6 +515,17 @@ S3 buckets can be configured to create access logs which log all requests made t
 to another AWS account.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       38851237-3F84-4DEF-9C04-5EAE16D5A0EF
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:26]
+  :END:
 What are the two types of encryption on S3?
 
 ** Answer
@@ -459,6 +540,17 @@ What are the two types of encryption on S3?
   - Client Side Encryption
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       32AE9C0A-E9EF-4DE7-950D-89D82DBA1F3B
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:25]
+  :END:
 What is Amazon Storage Gateway?
 
 ** Answer
@@ -472,6 +564,9 @@ Storage Gateway supports either VMWare ESXi or Microsoft Hyper-V. Once you've in
 the activation process you can use the AWS Management Console to create the storage gateway option that is right for you.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       E9D6D24B-250E-4EF1-A2D4-63BE987B1DBC
+  :END:
 What are the four types of storage gateway?
 
 ** Answer
@@ -482,6 +577,9 @@ What are the four types of storage gateway?
 - Tape Gateway (VTL) an archiving solution allows you to create virtual tapes then send them to S3 and then you can use lifecycle policies to send them to Glacier.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       DF5F34B8-6567-4FA0-BE9C-4360285FF7E1
+  :END:
 How does File Gateway work?
 
 ** Answer
@@ -492,6 +590,17 @@ transfered to S3, they can be managed as native S3 objects, and bucket policies 
 replication apply directly to objects stored in your bucket.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       F2FDC17F-2337-4EED-AC7D-51EA26A69E16
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:19]
+  :END:
 Volume Gateway?
 
 ** Answer
@@ -503,6 +612,9 @@ Snapshots are incremental backups that capture only changed blocks. All snapshot
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       88546BCF-A277-4300-9020-D6429663CC9B
+  :END:
 Volume Gateway - Stored Volumes?
 
 ** Answer
@@ -513,6 +625,9 @@ Amazon Simple Storage Service in the form of Amazon Block Store (EBS) snapshots.
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       748CF6C1-1943-46A5-9613-81D9BB13FA65
+  :END:
 Volume Gateway - Cached Volumes?
 
 ** Answer
@@ -523,6 +638,9 @@ devices from your on-premises application servers. Your gateway stores data that
 data on your on-premises storage gateway's cache and upload buffer storage. 1Gb-32Tb in size cached volumes.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       0F05B815-FD68-4A35-A528-27DD3A85AC09
+  :END:
 Volume Gateway - Tape Gateway?
 
 ** Answer
@@ -533,6 +651,9 @@ as iSCSI devices. You add tape cartridges as you need to archive your data. Supp
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       17757C21-F03B-48E6-8744-CAD3F57C7F42
+  :END:
 What is Snowball?
 
 ** Answer
@@ -545,6 +666,9 @@ encryption, and an industry standard Trusted Platform Module (TPM) designed to e
 Once the data transfer job has been processed and verified, AWS performs a software erasure of the Snowball appliance.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       BE4B4581-8057-4708-9964-0D50BF9F74DE
+  :END:
 What is Snowball Edge?
 
 ** Answer
@@ -558,6 +682,17 @@ helping ensure your applications continue to run even when they are not able to 
 It's storage AND compute capacity.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       C1BA4A2E-AF5E-4FE8-9021-6C3E25CFD7B8
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 1.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 1
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:27]
+  :END:
 What is Snowmobile?
 
 ** Answer
@@ -568,6 +703,9 @@ fast and cost effective.
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       18E7B49C-3DA3-4984-8724-EDA0ACD922B5
+  :END:
 What is S3 Transfer Acceleration?
 
 ** Answer
@@ -579,6 +717,9 @@ you can use a distinct URL to upload directly to an edge location which will the
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       2CCC97A3-8B6F-4707-A47D-D14A0EA09EE8
+  :END:
 What is EC2?
 
 ** Answer
@@ -586,6 +727,9 @@ Amazon Elastic Compute Cloud (EC2) is a web service that provides resizable comp
 to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       23456533-4D45-4AE4-BC03-E3B4EE1E7F53
+  :END:
 What are the EC2 options?
 
 ** Answer
@@ -599,6 +743,9 @@ server-bound software licences.
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       338D6A7D-22BE-4FEB-B2D7-580E4D011B1E
+  :END:
 Use cases for EC2 on demand?
 
 ** Answer
@@ -607,6 +754,9 @@ Use cases for EC2 on demand?
 - Applications being developed or tested on Amazon EC2 for the first time.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       31487EAA-56A2-4D1D-A214-E5089E498F7E
+  :END:
 Use cases for reserved instances ?
 
 ** Answer
@@ -621,6 +771,17 @@ Use cases for reserved instances ?
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       121555AE-383A-4F0A-8B83-EC02C36D0CC9
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:22]
+  :END:
 Spot instances use cases?
 
 ** Answer
@@ -632,6 +793,9 @@ Spot instances use cases?
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       AB4BAFC5-478D-4FD5-AD58-75E670DD4707
+  :END:
 Dedicated Hosts use cases?
 
 ** Answer
@@ -641,6 +805,9 @@ Dedicated Hosts use cases?
 - Can be purchased as a Reservation for up to 70% off the on-demand price.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       915091D8-766E-48BC-8AFC-585AF42099B2
+  :END:
 EC2 Instance types?
 
 ** Answer
@@ -657,6 +824,17 @@ P->Graphics
 X->Extreme Memory
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       018820BC-F039-4515-ADB9-82674C1B4AFB
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 2.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 2
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:21]
+  :END:
 What is EBS?
 
 ** Answer
@@ -666,6 +844,9 @@ automatically replicated to protect you from the failure of a single component.
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       C7AE05A2-BBCF-4DA8-BBD9-A8C2E98D7316
+  :END:
 EBS volume types?
 
 ** Answer
@@ -693,6 +874,9 @@ EBS volume types?
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       A12F4215-48CE-43D0-B2FC-3DFF488F42AF
+  :END:
 What is the default for Termination Protection on EC2?
 
 ** Answer
@@ -700,12 +884,18 @@ Termination Protection is turned off by default
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       57C59EFB-BC78-4AFD-8B0D-9005028D2476
+  :END:
 When an instance is terminated, what is the default for the root EBS?
 
 ** Answer
 The default action is for the root EBS to be deleted when the instance is terminated
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       101BEE9D-B086-4AC4-8663-A14CD49E1920
+  :END:
 Can you encrypt the EBS root volume of your default ami's ?
 
 ** Answer
@@ -714,6 +904,9 @@ By default no. But you can create your own AMI's in the AWS console or using the
 Additional volumes CAN be encrypted
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       B0450FA6-A71A-4987-B615-A07BDFBBF474
+  :END:
 What is a security group?
 
 ** Answer
@@ -723,24 +916,45 @@ A security group is basically a firewall that control access to your EC2 instanc
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       A4228EA7-63E7-40E9-84C5-A25F9895D40F
+  :END:
 Security Groups - inbound traffic default?
 
 ** Answer
 All inbound traffic is blocked by default
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       3C1B9D13-7DAC-4369-BA50-C6F55BCAEF6D
+  :END:
 Scurity Groups - outbound traffic default?
 
 ** Answer
 All outbound traffic is allowed by default
 
 * Question :drill:
+  SCHEDULED: <2018-10-30 Tue>
+  :PROPERTIES:
+  :ID:       F49F3067-60DB-42B3-8E13-7947BE7549EB
+  :DRILL_LAST_INTERVAL: 4.14
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 5.0
+  :DRILL_EASE: 2.6
+  :DRILL_LAST_QUALITY: 5
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:26]
+  :END:
 How much time does it take for change to security groups to propagate?
 
 ** Answer
 Changes take effect immediately
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       99F0DFE1-D13D-43A5-97E4-EA851C554CFF
+  :END:
 How many EC2 instances can I have per Security Group?
 
 ** Answer
@@ -748,6 +962,9 @@ As much as I want
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       898A2041-44A9-4568-8C77-F562104B3B5D
+  :END:
 How many Security Group can I attach to an EC2 ?
 
 ** Answer
@@ -755,30 +972,54 @@ You can have multiple SG attached to EC2 instances
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       CDFAFB92-2FC5-4FCF-B5B1-49C0096449CA
+  :END:
 Security Groups are STATEFUL what does it means?
 
 ** Answer
 If you create an inbound rule allowing traffic in, that traffic is automatically allowed to back out again.
 
 * Question :drill:
+  SCHEDULED: <2018-10-30 Tue>
+  :PROPERTIES:
+  :ID:       89760F90-C25A-40C4-9E11-ADED277BE923
+  :DRILL_LAST_INTERVAL: 3.86
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 3.0
+  :DRILL_EASE: 2.36
+  :DRILL_LAST_QUALITY: 3
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:27]
+  :END:
 Can you block a specific IP address using security groups ?
 
 ** Answer
 No, instead use Network Access Control Lists
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       038EEC78-8F91-487B-92B6-BBBFBACE95AB
+  :END:
 Can you specify deny rules using Security Groups?
 
 ** Answer
 No, you can specify allow rules but not deny rules.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       3A146AAA-AAF4-4B4B-9BBA-95A30C7ED1E5
+  :END:
 Where are EBS snapshots stored?
 
 ** Answer
 They are stored on S3 though you can't see them in the console.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       4BF28883-739E-468A-B2A9-4C20CBEB34F9
+  :END:
 What are EBS snapshots?
 
 ** Answer
@@ -788,6 +1029,9 @@ Snapshots are incremental - this means that only the blocks that have changed si
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       418F6FAB-EB16-400B-929B-8F904240A2C6
+  :END:
 Can I create a snapshot of my root volume?
 
 ** Answer
@@ -795,22 +1039,280 @@ Yes. You should stop the instance before taking the snapshot. However you can ta
 
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       371CC771-18AC-4323-96D6-957E818EEF61
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 0.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 0
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:18]
+  :END:
 How can I create an AMI?
 
 ** Answer
 You can create AMI's from EBS backed instances and snapshots.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       196DDE93-3BF5-474B-B1D6-A1D33BBE9126
+  :DRILL_LAST_INTERVAL: 0.0
+  :DRILL_REPEATS_SINCE_FAIL: 1
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 1
+  :DRILL_AVERAGE_QUALITY: 1.0
+  :DRILL_EASE: 2.5
+  :DRILL_LAST_QUALITY: 1
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:19]
+  :END:
 Can I change the size of my EBS volume?
 
 ** Answer
 You can change EBS volumes sizes on the fly, including changing the size and the storage type.
 
 * Question :drill:
+  :PROPERTIES:
+  :ID:       E40D436C-5960-4829-BF8F-E1EC0A8FE685
+  :END:
 Can I have a volume in a different AZ than my EC2?
 
 ** Answer
 Volumes will ALWAYS be in the same AZ as the EC2 instance.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       E7EB75C6-2FA2-41FE-B867-A33536337C50
+  :END:
+Are the snaphsots encrypted?
+
+** Answer
+Yes, snapshots are encrypted automatically
+
+Volumes restored from encrypted snapshots are also encrypted automatically
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       BE4EC2F7-84FA-4F12-9ED6-1C7576F150A4
+  :END:
+Can you share snapshots?
+
+** Answer
+Yes ONLY if they are unencrypted.
+These snapshots can be shared with other AWS accounts or made public.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       3B8D44E3-0CD1-4B84-AA95-2A6231132E7B
+  :END:
+What are the parameters you can choose when creating your AMI?
+
+** Answer
+- Region
+- Operating System
+- Architecture (32-bit or 64-bit)
+- Launch Permissions
+- Storage for the Root Device (Root Device Volume)
+  - Instance Store (EPHEMERAL STORAGE)
+  - EBS Backed Volumes
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       A65FABBC-F381-4A3B-9CEA-70D2C2D4E515
+  :END:
+What are the differences between EBS and Instance Store AMI?
+
+** Answer
+All AMIs are categorized as either backed by Amazon EBS or backed by instance store.
+
+For EBS Volumes: The root device for an instance launched from the AMI is an Amazon EBS volume created from an Amazon EBS snapshot.
+
+For Instance Store Volumes: The root device for an instance launched from the AMI is an instance store volume created from a template stored in S3.
+
+- Instance Store Volumes are sometimes called Ephemeral Storage.
+- Instance Store Volumes cannot be stopped. If the underlying host fails, you will lose your data.
+- EBS backed instances can be stopped. You will not lose the data on this instance if it is stopped.
+- You can reboot both, you will not lose your data.
+- By default, both ROOT volumes will be deleted on termination, however with EBS volumes, you can tell AWS to keep the root device volume.
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       89A5DA81-77A3-4442-B1FE-EA53E75D8697
+  :END:
+What are the 3 types of load balancers in AWS?
+
+** Answer
+- Application Load Balancer
+- Network Load Balancer
+- Classic Load Balancer
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       86D1E4BC-A76B-49B1-AD9D-628F5810DC6E
+  :END:
+What does the 504 error mean?
+
+** Answer
+
+504 Error means the gateway has timed out. This means that the application not responding within the idle timeout period.
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       EBFDD1C7-2459-48A5-9785-28AE5B2EA346
+  :END:
+Which option do you need to look for your load balancer if you need the IPv4 of your end user?
+
+** Answer
+Look for the X-Forwarded-For Header
+
+
+* Question :drill:
+  :PROPERTIES:
+  :ID:       E02EB097-438F-4BD5-8666-CFD2A457710C
+  :END:
+ELB misc?
+
+** Answer
+- Instances monitored by ELB are reported as: 
+  - InService or OutofService
+- Health Checks check the instance health by talking to it
+- Have their own DNS name. You are never given an IP address
+
+
+* Question :drill:
+  SCHEDULED: <2018-10-30 Tue>
+  :PROPERTIES:
+  :ID:       C08B31A2-8D0A-453B-9143-FA87764ED7D6
+  :DRILL_LAST_INTERVAL: 4.14
+  :DRILL_REPEATS_SINCE_FAIL: 2
+  :DRILL_TOTAL_REPEATS: 1
+  :DRILL_FAILURE_COUNT: 0
+  :DRILL_AVERAGE_QUALITY: 5.0
+  :DRILL_EASE: 2.6
+  :DRILL_LAST_QUALITY: 5
+  :DRILL_LAST_REVIEWED: [2018-10-26 Fri 10:20]
+  :END:
+Can you attach a role to an EC2 instance that is running?
+
+** Answer
+Yes! But it's a new feature, in the exam the answer may be NO.
+
+
+
+* Question :drill:
+What is the Standard Monitoring timeframe?
+
+** Answer
+5 minutes
+
+* Question :drill:
+What is the Detailed Monitoring timeframe?
+
+** Answer
+1 minute
+
+* Question :drill:
+What can I do with Cloudwatch?
+
+** Answer
+- Dashboards - Creates awesome dashboards to see what is happening with your AWS environment.
+- Alarms - Allows you to set Alarns that notify you when particular thresholds are hit.
+- Events - CloudWatch Events helps you to respond to state changes in your AWS ressources.
+- Logs - CloudWatch Logs helps you to aggregate, monitor, and store logs.
+
+
+
+* Question :drill:
+What are the two types of Placement Groups ?
+
+** Answer
+- Clustered Placement Group
+- Spread Placement Group
+
+
+* Question :drill:
+What is a Clustered Placement Group?
+
+** Answer
+A Cluster Placement Group is a grouping of instances within a single AZ. Placement Groups are recommended for applications 
+that need low network latency, high network throughput, or both.
+
+Only certain instcances can be launched in to a Clustered Placement Group (Compute Optimized, Memory optimized, Storage Optimized)
+
+
+* Question :drill:
+What is a Spread Placement Group?
+
+** Answer
+A Spread Placement Group is a group of instances each placed on distinct underlying hardware.
+
+Spread Placement Groups are recommended for applications that have a small number of critical instances that should be kept separate from
+each other.
+
+A Spread Placement Group can span multiple AZ.
+
+
+* Question :drill:
+Can you have different placement groups with the same name ?
+
+** Answer
+The name you specify for a placement group must be unique within your AWS account.
+
+* Question :drill:
+Can you merge placement groups?
+
+** Answer
+No
+
+* Question :drill:
+What is the AWS recommendation for placement groups?
+
+** Answer
+AWS recommend homogeneous instances within placement groups
+
+
+* Question :drill:
+Can you move an existing instance into a placement group?
+
+** Answer
+You can't move an existing instance into a placement group. You can create an AMI from an existing instance, and then 
+launch a new instance fron the AMI into a placement group.
+
+
+* Question :drill:
+Why do we need placement groups?
+
+** Answer
+There are two types of placement groups: "Cluster", which places
+ instances into a low-latency group in a single Availability
+ Zone, and "Spread", which spreads instances across underlying hardware. 
+
+- "Cluster" placement groups are recommended for applications that benefit from low
+ network latency, high network throughput, or both, and if the
+ majority of the network traffic is between the instances in
+ the group. A "spread" placement group is a group of
+ instances that are each placed on distinct underlying hardware. 
+- "Spread" placement groups are recommended for applications that have a small
+ number of critical instances that should be kept separate from
+ each other. Granted, most of the previous information is copypasta
+ from AWS. Let's expand on this:
+
+
+One reason to use a "cluster" placement groups is that
+ you are not guaranteed 10 gigabit unless your instances are
+ in a placement group. You'd use a "cluster" placement group
+ when you need the highest possible performance for cluster computing
+. You do sacrifice redundancy since they could be on the
+ same switch or in the same rack or breaker set. Hardware does break.
+
+A "spread" placement group provides redundancy because it's place on
+ distinct hardware, which reduces the impact of hardware failures on your applications.
+
 
 
 
