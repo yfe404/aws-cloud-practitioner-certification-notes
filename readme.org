@@ -1316,3 +1316,95 @@ A "spread" placement group provides redundancy because it's place on
 
 
 
+* Question :drill:
+What is EFS?
+
+** Answer
+Amazon Elastic File System (Amazon EFS) is a file storage service for Amazon Elastic Cloud Compute instances.
+Amazon EFS is easy to use and provides a simple interface that allows you to create and configure file systems quickly and easily.
+With Amazon EFS, storage apacity is elastic, growing and shrinking automatically as you add and remove files, so your applications
+have the storage they need when they need it.
+
+* Question :drill:
+What are EFS features?
+
+** Answer
+- Supports the Network File System version 4 (NFSv4) protocol
+- You only pay for the storage you use (no pre-provisioning required)
+- Can scale to petabytes
+- Can support thousands of concurrent NFS connections
+- Data is stored across multiple AZs within a region.
+- Read After Write Consistency
+
+
+* Question :drill:
+What is the EFS use case?
+
+** Answer
+EFS is used as a File Server. You store files in it then you make it a central repository for multiples EC2 instances accessing the same files.
+Exemple: EC2 apache servers behind a load balancer that serve the same files. 
+
+* Question :drill:
+What is Lambda?
+
+** Answer
+AWS Lambda is a compute service where you can upload your code and create a Lambda function. AWS Lambda takes care of provisioning and managing
+the servers that you use to run the code. You don't have to worry about operating systems, patching, scaling etc. You can use Lambda in the following
+ways:
+
+- As an event-driven compute service where AWS Lambda runs your code in response to events. These events could be changes to data in an Amazon S3 
+  bucket or an Amazon DynamoDB table.
+- As a compute service to run your code in response to HTTP requests using Amazon API Gateway or API calls made using AWS SDKs. 
+
+
+* Question :drill:
+What are the triggers for Lambda?
+
+** Answer
+- API Gateway
+- AWS IoT
+- Alexa Skills Kit
+- Alexa Smart Home
+- CloudFront
+- CloudWatch Events
+- CloudWatchLogs
+- CodeCommit
+- Cognito Sync Trigger
+- DynamoDB
+- Kinesis
+- S3
+- SNS
+
+
+* Question :drill:
+What languages can I use with Lambda?
+
+** Answer
+- Node.js
+- Java
+- Python
+- C#
+- Go
+
+
+* Question :drill:
+How is Lambda Priced?
+
+** Answer
+- Number of requests
+  - First 1 million requests are free. $0.20 per 1 millon requests thereafter.
+
+- Duration
+  - Duration is calculated from the time your code begins executing until it returns or otherwise terminates, rounded up to the nearest 100ms.
+      The price depends on the amount of memory you allocate to your function. You are charged $0.00001667 for every GB-second used.
+
+
+* Question :drill:
+Which service can you use to debug your serverless architectures?
+
+** Answer
+Architectures can get extremely complicated, AWS X-ray allows you to debug what is happening.
+
+
+
+
