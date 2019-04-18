@@ -51,7 +51,7 @@ What are the models of computing deployment?
 - Hybrid
 - On-premises
 
-n* Question :drill:
+* Question :drill:
   :PROPERTIES:
   :ID:       4CD5C268-64A4-408A-9AA7-DC24AE52DF1D
   :END:
